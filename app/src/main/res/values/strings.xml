@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CuriouslyBuiltSplashVideo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="splash_page_app_descriptions">
+        <item>Track all of the different locations you have camped.</item>
+        <item>Find and share new campgrounds with friends.</item>
+        <item>Review visited campgrounds and provide pictures for other users.</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.curiouslybuilt.splashvideo.app.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <VideoView
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/videoView"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:src="@drawable/logo" />
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!--android:layout_height="100dp"-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+        android:layout_height="50dp"
+
+            android:layout_width="fill_parent">
+
+
+        </android.support.v4.view.ViewPager>
+
+        <com.curiouslybuilt.splashvideo.app.CirclePageIndicator
+            android:id="@+id/titles"
+android:layout_marginBottom="30dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/grey_button_selector"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.5"
+                android:text="LOG IN"></Button>
+
+            <Button
+
+                android:padding="8dp"
+                android:background="@drawable/orange_button_selector"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.5"
+                android:text="SIGN UP"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
